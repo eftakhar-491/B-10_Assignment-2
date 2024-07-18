@@ -1,3 +1,94 @@
-h1 {
-  color: cadetblue;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@font-face {
+  font-family: "miama";
+  src: url(./fonts/Miama.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  font-family: "inter", serif;
+  background-color: black;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* header section  */
+header {
+  width: 100%;
+  height: 715px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+/* nav section */
+nav {
+  width: 80%;
+  margin: 0px auto 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > h1 i {
+  color: rgb(230, 83, 60);
+  font-size: 36px;
+  font-weight: 800;
+}
+nav > ul {
+  list-style: none;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 5px;
+}
+nav > ul li {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 46px;
+  padding: 10px 26px;
+}
+.home {
+  background-color: rgb(230, 83, 60);
+}
+.header-details {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+}
+.header-details-text {
+  background-color: aqua;
+  width: 50%;
+}
+.header-details-text > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 110%;
+}
+.header-details-text > h1 > span {
+  font-family: "miama";
+  font-size: 150px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.header-img {
+  width: 50%;
+  background-color: azure;
+  display: flex;
+}
+.header-img > img {
+  margin-left: auto;
 }
