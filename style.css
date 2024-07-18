@@ -120,7 +120,6 @@ nav > ul li {
   display: flex;
   justify-content: end;
   align-items: end;
-  background-color: antiquewhite;
 }
 .header-img > img {
   /* margin-left: auto; */
