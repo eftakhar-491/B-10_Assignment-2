@@ -212,6 +212,50 @@ nav > ul li {
   letter-spacing: 0.3px;
   text-align: center;
 }
+/* extra mile section */
+.extra-mile {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  padding: 25px;
+  background-color: rgb(34, 34, 34);
+}
+.extra-mile-details {
+  width: 40%;
+}
+.extra-mile-details > h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.extra-mile-details > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+}
+.extra-mile-details > .btn {
+  max-width: 200px;
+}
+.extra-mile-img {
+  width: 45%;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.extra-mile-img > img {
+  width: 100%;
+
+  border-radius: 18px;
+  transform: scale(2.6);
+  position: relative;
+  top: 80px;
+  right: 100px;
+}
 /* tablet view style */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   /* header section  */
@@ -267,6 +311,29 @@ nav > ul li {
   .habit {
     width: 40%;
     margin-top: 40px;
+  }
+  /* extra mile section */
+  .extra-mile {
+    width: 90%;
+  }
+  .extra-mile-details {
+    width: 40%;
+  }
+  .extra-mile-details > h1 {
+    font-size: 30px;
+  }
+  .extra-mile-details > p {
+    font-size: 13px;
+
+    line-height: 18px;
+  }
+  .extra-mile-details > .btn {
+    max-width: 180px;
+  }
+  .extra-mile-img {
+    width: 55%;
+    height: 300px;
+    border-radius: 18px;
   }
 }
 /* mobile view style */
@@ -378,5 +445,28 @@ nav > ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  /* extra mile section */
+  .extra-mile {
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .extra-mile-details {
+    width: 100%;
+  }
+  .extra-mile-details > h1 {
+    font-size: 28px;
+  }
+  .extra-mile-details > .btn {
+    max-width: 100%;
+  }
+  .extra-mile-img {
+    width: 100%;
+  }
+  .extra-mile-img > img {
+    width: 100%;
+    top: 60px;
+    right: 50px;
   }
 }
