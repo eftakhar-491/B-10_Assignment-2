@@ -510,12 +510,11 @@ nav > ul li {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  height: 340px;
 }
 .price-details-1 {
   clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
   width: 280px;
-  height: 100%;
+  height: 340px;
   background-color: aqua;
   background-image: linear-gradient(45deg, white, #e6533c, #e6533c, white);
 }
@@ -559,6 +558,86 @@ nav > ul li {
   margin: 20px auto;
   padding: 10px;
   border: 2px solid #e6533c;
+}
+/* bmi calculator section */
+.bmi-calculator {
+  width: 100%;
+}
+.bmi-calculator > h1 {
+  max-width: 600px;
+  font-size: 48px;
+  margin: 0 auto;
+}
+.bmi-calculator > p {
+  max-width: 600px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+.chart-calculator {
+  background-color: rgb(34, 34, 34);
+  margin: 30px 0px;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.chart {
+  width: 40%;
+}
+.chart > h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.chart > table {
+  margin-top: 30px;
+}
+.chart > table th {
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+}
+.chart > table td {
+  text-align: left;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.calculator {
+  width: 50%;
+}
+.calculator > h1 {
+  font-size: 35px;
+}
+.calculator > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.calculator-input {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 40px);
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.calculator-input input,
+select {
+  padding-left: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  width: auto;
+}
+.select2 {
+  grid-column: 1 / 3;
+}
+.calculator > .btn {
+  max-width: 180px;
+  margin-bottom: 10px;
 }
 /* tablet view style */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -672,6 +751,29 @@ nav > ul li {
     justify-content: center;
     gap: 30px;
     align-items: center;
+  }
+  /* bmi calculator section */
+
+  .bmi-calculator > h1 {
+    padding-left: 30px;
+  }
+  .bmi-calculator > p {
+    padding-left: 30px;
+  }
+  .chart-calculator {
+    background-color: rgb(34, 34, 34);
+    margin: 30px 0px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .chart {
+    width: 100%;
+  }
+  .calculator {
+    width: 100%;
   }
 }
 /* mobile view style */
@@ -939,7 +1041,6 @@ nav > ul li {
     align-items: center;
     gap: 20px;
     margin-top: 10px;
-    height: 310px;
   }
   .price-details-1 {
     width: 260px;
@@ -947,7 +1048,7 @@ nav > ul li {
   .price-details-2 {
     clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
     width: 255px;
-    padding: 25px 18px;
+    padding: 35px 20px;
   }
   .price-details-2 > h1 {
     font-size: 22px;
@@ -965,10 +1066,56 @@ nav > ul li {
   .price-details > span {
     font-size: 14px;
   }
-}
-/* clip-path: polygon(14% 0, 0 14%, 0 30%, 0 79%, 12% 100%, 27% 100%, 35% 88%, 51% 88%, 56% 93%, 77% 93%, 84% 100%, 100% 90%, 100% 14%, 86% 0, 72% 0, 66% 5%, 27% 5%, 23% 0); */
-/* 27% 100%, 35% 88%, 51% 88%, 56% 93%, 77% 93%, 84% 100% */
-/* 72% 0, 66% 5%, 27% 5%, 23% 0 */
+  /* bmi calculator section */
+  .bmi-calculator {
+    margin-top: 0px;
+    padding: 0;
+  }
+  .bmi-calculator > h1 {
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .bmi-calculator > p {
+    padding-left: 10px;
+    font-size: 13px;
+  }
+  .chart-calculator {
+    flex-direction: column;
+    padding: 12px;
+  }
 
-/* clip-path: polygon(72% 0, 66% 5%, 27% 5%, 23% 0); */
-/* clip-path: polygon(27% 100%, 35% 88%, 51% 88%, 56% 93%, 77% 93%, 84% 100%); */
+  .chart {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .chart > h1 {
+    font-size: 22px;
+  }
+  .chart > table {
+    margin-top: 30px;
+  }
+  .chart > table th {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .chart > table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .calculator {
+    width: 100%;
+  }
+  .calculator > h1 {
+    font-size: 22px;
+  }
+  .calculator > p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .calculator-input {
+    grid-template-columns: repeat(2, 49%);
+    /* gap: 10px; */
+    row-gap: 10px;
+    column-gap: 2%;
+  }
+}
