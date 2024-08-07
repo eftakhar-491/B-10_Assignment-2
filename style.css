@@ -780,7 +780,70 @@ select {
   background-position-y: 0px;
   background-repeat: no-repeat;
 }
-
+/* footer section */
+footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.footer-details1 {
+  padding: 50px 0;
+  width: 50%;
+}
+.footer-details1 > i {
+  color: rgb(230, 83, 60);
+  font-size: 70px;
+  font-weight: 800;
+}
+.footer-details1 > p {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+.footer-details2 {
+  width: 50%;
+  padding: 50px 0;
+  display: flex;
+  gap: 20px;
+}
+.service1,
+.service2 {
+  width: 50%;
+}
+.service1 > ul,
+.service2 > ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.service1 > ul li,
+.service2 > ul li {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+}
+footer > hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+footer > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 30px;
+}
 /* tablet view style */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   /* header section  */
@@ -934,6 +997,19 @@ select {
   }
   .team > h1 {
     font-size: 18px;
+  }
+  /* footer section */
+  .footer {
+    flex-direction: column;
+  }
+  .footer-details1 {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .footer-details2 {
+    width: 100%;
+    padding: 0 0 50px 0;
   }
 }
 /* mobile view style */
@@ -1296,5 +1372,48 @@ select {
 
   .team {
     padding: 15px;
+  }
+  /* footer section */
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .footer-details1 {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+  .footer-details1 > i {
+    font-size: 55px;
+  }
+  .footer-details1 > p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .footer-details2 {
+    width: 100%;
+    padding: 0 0 50px 0;
+    flex-direction: column;
+  }
+  .service1,
+  .service2 {
+    width: 100%;
+  }
+  .service1 > ul,
+  .service2 > ul {
+    margin-top: 20px;
+    list-style: none;
+  }
+  .service1 > ul li,
+  .service2 > ul li {
+    font-size: 14px;
+  }
+  footer > hr {
+    width: 90%;
+  }
+  footer > p {
+    font-size: 14px;
+    padding: 20px 0;
   }
 }
